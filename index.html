@@ -104,6 +104,19 @@ h3{font-size:36px}
 .funnel-side h3{font-size:42px}
 .funnel-side .kicker{margin-bottom:16px}
 .funnel-side p{color:var(--muted);font-size:13px}
+/* FUNNEL INVERTIDO (ratio + custo) */
+.ffunnel{display:grid;gap:11px;margin-top:6px}
+.ff-row{display:grid;grid-template-columns:96px 1fr 132px;align-items:center;gap:14px}
+.ff-ratio{text-align:right;font:900 19px/1 "Barlow Condensed";color:#111}
+.ff-ratio small{display:block;font:800 8px/1.2 Montserrat,sans-serif;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-top:4px}
+.ff-bar{justify-self:stretch;background:var(--red);color:#fff;border-radius:14px;padding:17px 24px;text-align:center;font-weight:700;font-size:14px}
+.ff-bar b{font:900 22px "Barlow Condensed";margin-right:7px}
+.ff-bar.alt{background:#f0817a}
+.ff-r2 .ff-bar{margin:0 5%}
+.ff-r3 .ff-bar{margin:0 11%}
+.ff-r4 .ff-bar{margin:0 17%}
+.ff-cost span{display:inline-block;background:#fff;border:1px solid #111;border-radius:999px;padding:9px 14px;font:800 11px/1 "Barlow Condensed";letter-spacing:.02em}
+@media(max-width:820px){.ff-row{grid-template-columns:60px 1fr 96px;gap:8px}.ff-r2 .ff-bar,.ff-r3 .ff-bar,.ff-r4 .ff-bar{margin:0}.ff-bar{font-size:12px;padding:14px 12px}.ff-cost span{padding:7px 9px;font-size:9px}}
 /* KPI CARDS */
 .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .kpi{border:1px solid #111;border-radius:20px;padding:28px;background:rgba(255,255,255,.6);text-align:center}
@@ -182,13 +195,13 @@ h3{font-size:36px}
 <div class="ropre">R.O.P.R.E</div>
 <div class="kicker" style="margin-top:14px">Check-in mensal · 23 de julho de 2026</div>
 <h1>Check-<span class="red">in</span></h1>
-<p class="lead">Leitura de resultados dos últimos 30 dias e o plano de ação para o próximo ciclo.</p>
+<p class="lead">Leitura dos resultados de julho e o plano de ação para o próximo ciclo.</p>
 </div>
 <aside class="client">
 <div>
 <div class="client-badge"><img src="assets/bottons-logo.png" alt="Bottons &amp; Cia"></div>
 <p>Bottons &amp; Cia · Brindes promocionais</p>
-<span class="date">23/06 a 22/07 · 2026</span>
+<span class="date">01/07 a 23/07 · 2026</span>
 </div>
 </aside>
 </div>
@@ -218,7 +231,7 @@ h3{font-size:36px}
 <div class="category-band" data-word="RESULTS">
 <div class="wrap">
 <span class="chapter-no">01 — RESULTADOS</span>
-<h2>O que os últimos 30 dias entregaram.</h2>
+<h2>O que julho entregou.</h2>
 <p>Uma leitura consolidada de investimento, alcance e geração de demanda em Meta Ads e Google Ads.</p>
 </div>
 </div>
@@ -232,43 +245,26 @@ h3{font-size:36px}
 <p>Investimento total distribuído entre prospecção no Google e relacionamento/vendas no Meta.</p>
 </div>
 <div class="strip">
-<div class="cell"><small>Período</small><b>23/06–22/07</b></div>
-<div class="cell hl"><small>Investimento total</small><b>R$ 9.429,16</b></div>
-<div class="cell"><small>Impressões (Meta+Google)</small><b>265.133</b></div>
-<div class="cell"><small>Cliques Google</small><b>5.953</b></div>
+<div class="cell"><small>Período</small><b>01–23/07</b></div>
+<div class="cell hl"><small>Investimento total</small><b>R$ 6.521,70</b></div>
+<div class="cell"><small>Leads (Google)</small><b>301</b></div>
+<div class="cell"><small>Impressões (Meta+Google)</small><b>188.040</b></div>
 </div>
-
-<!-- Meta card -->
-<div class="result-card">
-<div class="pf"><span class="dot" style="background:#0866ff">f</span> Meta Ads</div>
-<div class="invest"><small>Valor investido</small><b>R$ 1.244,79</b></div>
-<div class="metric"><small>Conversas WhatsApp</small><b>95</b></div>
-<div class="metric"><small>Custo por conversa</small><b>R$ 4,41</b></div>
-</div>
-
-<!-- Google card -->
-<div class="result-card">
-<div class="pf"><span class="dot" style="background:#34a853">G</span> Google Ads</div>
-<div class="invest"><small>Valor investido</small><b>R$ 8.184,37</b></div>
-<div class="metric"><small>Leads · Search</small><b>301</b></div>
-<div class="metric"><small>Custo por conversão · Search</small><b>R$ 23,40</b></div>
-</div>
-<div class="pending"><b>Atenção ao tracking:</b> os leads estão registrados, mas as vendas não estão sendo rastreadas corretamente. Por isso, faturamento e ROAS não podem ser atribuídos com segurança neste período.</div>
+<p class="subnote"><b>Como ler:</b> 3 campanhas no Meta e 3 no Google, cada uma com um objetivo próprio — vendas, reconhecimento e leads. Abaixo, <b>cada campanha aparece na sua própria linha, com o investimento individual</b> — nada somado entre campanhas.</p>
 </div>
 
 <!-- Meta detalhado -->
 <div class="content-block">
 <div class="content-head">
-<h3>Resultados · Meta Ads</h3>
-<p>Desempenho por campanha. Estratégia de topo (tráfego/perfil), relacionamento (WhatsApp) e vendas sazonais.</p>
+<h3>Meta Ads · por campanha</h3>
+<p>Três campanhas ativas no período, cada uma com seu objetivo e seu investimento próprio.</p>
 </div>
-<div class="table" style="--cols:5">
-<div class="row head"><div>Campanha</div><div>Resultado</div><div>Investido</div><div>Impressões</div><div>Custo/result.</div></div>
-<div class="row"><div><strong>WPP · Botton Personalizado</strong></div><div>95 conversas</div><div>R$ 418,78</div><div>58.568</div><div>R$ 4,41</div></div>
-<div class="row"><div><strong>Tráfego · Perfil IG</strong></div><div>2.125 visitas</div><div>R$ 294,94</div><div>14.919</div><div>R$ 0,14</div></div>
-<div class="row"><div><strong>CBO Venda · LGBT+ / Junho / Copa</strong></div><div>5 compras</div><div>R$ 297,14</div><div>23.480</div><div>R$ 59,43</div></div>
-<div class="row"><div><strong>Venda · Brindes Copa</strong> <span style="color:#999">(pausada)</span></div><div>1 compra</div><div>R$ 233,93</div><div>9.348</div><div>R$ 233,93</div></div>
-<div class="row total"><div>Total Meta</div><div>—</div><div>R$ 1.244,79</div><div>106.315</div><div>—</div></div>
+<div class="table" style="--cols:7">
+<div class="row head"><div>Campanha</div><div>Objetivo</div><div>Investido</div><div>Impressões</div><div>Alcance</div><div>Resultado</div><div>Custo por resultado</div></div>
+<div class="row"><div><strong>Campanha 01</strong></div><div>Vendas</div><div>R$ 222,52</div><div>15.795</div><div>13.082</div><div>4 compras</div><div><strong>R$ 55,63</strong> / venda</div></div>
+<div class="row"><div><strong>Campanha 02</strong></div><div>Reconhecimento</div><div>R$ 222,50</div><div>11.067</div><div>7.817</div><div>1.571 visitas ao perfil</div><div><strong>R$ 0,14</strong> / visita</div></div>
+<div class="row"><div><strong>Campanha 03</strong></div><div>Leads</div><div>R$ 317,14</div><div>49.656</div><div>46.363</div><div>74 conversas WhatsApp</div><div><strong>R$ 4,29</strong> / conversa</div></div>
+<div class="row total"><div>Soma Meta</div><div>—</div><div>R$ 762,16</div><div>76.518</div><div>67.262</div><div>—</div><div>—</div></div>
 </div>
 </div>
 
@@ -276,34 +272,72 @@ h3{font-size:36px}
 <div class="content-block">
 <div class="funnel-wrap">
 <div class="funnel-side">
-<div class="kicker">Inside Sales · Meta</div>
-<h3>Funil de vendas</h3>
-<p>Do alcance à conversa qualificada no WhatsApp, principal porta de entrada de orçamentos da Bottons.</p>
+<div class="kicker">Funil · Meta</div>
+<h3>Funil do Meta</h3>
+<p>Do alcance à geração de leads (conversas no WhatsApp), com a taxa de passagem entre as etapas.</p>
 </div>
-<div class="funnel">
-<div class="bar"><b>106.315</b> Impressões</div>
-<div class="bar"><b>84.580</b> Alcance</div>
-<div class="bar"><b>2.125</b> Visitas ao perfil</div>
-<div class="bar"><b>95</b> Conversas no WhatsApp</div>
-<div class="bar final">Compras no site<b>6</b></div>
+<div class="ffunnel">
+<div class="ff-row ff-r1">
+<div class="ff-ratio"></div>
+<div class="ff-bar"><b>67.262</b> Alcance</div>
+<div class="ff-cost"></div>
+</div>
+<div class="ff-row ff-r2">
+<div class="ff-ratio">1,14x<small>Frequência</small></div>
+<div class="ff-bar alt"><b>76.518</b> Impressões</div>
+<div class="ff-cost"></div>
+</div>
+<div class="ff-row ff-r4">
+<div class="ff-ratio">0,10%<small>Impr. → Leads</small></div>
+<div class="ff-bar"><b>74</b> Leads (conversas)</div>
+<div class="ff-cost"><span>CPL R$ 4,29</span></div>
 </div>
 </div>
-</div>
+</div></div>
 
 <!-- Google detalhado -->
 <div class="content-block">
 <div class="content-head">
-<h3>Resultados · Google Ads</h3>
-<p>As campanhas de Search concentraram a geração de leads; a PMAX operou separadamente com foco em Shopping.</p>
+<h3>Google Ads · por campanha</h3>
+<p>Três campanhas: uma de vendas (produtos/Shopping) e duas de leads com criativos dinâmicos.</p>
 </div>
-<div class="table" style="--cols:4">
-<div class="row head"><div>Campanha</div><div>Investido</div><div>Cliques</div><div>Impressões</div></div>
-<div class="row"><div><strong>Search · Site Dinâmico</strong></div><div>R$ 5.102,83</div><div>1.459</div><div>9.464</div></div>
-<div class="row"><div><strong>Search · Site</strong></div><div>R$ 1.948,10</div><div>1.052</div><div>10.993</div></div>
-<div class="row"><div><strong>PMAX · Shopping</strong></div><div>R$ 1.133,44</div><div>3.442</div><div>138.361</div></div>
-<div class="row total"><div>Total Google</div><div>R$ 8.184,37</div><div>5.953</div><div>158.818</div></div>
+<div class="table" style="--cols:6">
+<div class="row head"><div>Campanha</div><div>Objetivo</div><div>Investido</div><div>Cliques</div><div>Impressões</div><div>Resultado</div></div>
+<div class="row"><div><strong>Campanha 01</strong></div><div>Vendas</div><div>R$ 784,20</div><div>2.348</div><div>95.774</div><div>59,80 vendas · R$ 13,11/conv</div></div>
+<div class="row"><div><strong>Campanha 02</strong></div><div>Lead (criativo dinâmico)</div><div>R$ 3.333,28</div><div>994</div><div>6.721</div><div>CTR 14,79% · CPC R$ 3,35</div></div>
+<div class="row"><div><strong>Campanha 03</strong></div><div>Lead</div><div>R$ 1.642,06</div><div>866</div><div>9.027</div><div>CTR 9,59% · CPC R$ 1,90</div></div>
+<div class="row total"><div>Soma Google</div><div>—</div><div>R$ 5.759,54</div><div>4.208</div><div>111.522</div><div>—</div></div>
 </div>
-<div class="pending"><b>Leitura correta do investimento:</b> R$ 7.050,93 nas duas campanhas de Search, responsáveis por 301 leads a R$ 23,40 por conversão. A PMAX investiu R$ 1.133,44 e não entra nesse cálculo de CPA.</div>
+<div class="notice"><b>Os 301 leads do período</b> vieram das campanhas de lead (<b>02 e 03</b>), que juntas investiram <b>R$ 4.975,34</b> — um <b>CPL de R$ 16,53</b>. Esse número foi apurado pelo <b>CRM</b>, não pelo rastreamento da plataforma: os destinos dessas campanhas estão marcados como "não rastreáveis" no Google, então a coluna de conversões da ferramenta aparece zerada — mas os 301 leads são reais. Já as <b>vendas da Campanha 01</b> (59,80) são rastreadas normalmente.</div>
+</div>
+
+<!-- Funil Google -->
+<div class="content-block">
+<div class="funnel-wrap">
+<div class="funnel-side">
+<div class="kicker">Funil · Google</div>
+<h3>Funil do Google</h3>
+<p>Da impressão ao lead, com o CTR e a taxa de conversão em cada passagem.</p>
+</div>
+<div class="ffunnel">
+<div class="ff-row ff-r1">
+<div class="ff-ratio"></div>
+<div class="ff-bar"><b>111.522</b> Impressões</div>
+<div class="ff-cost"></div>
+</div>
+<div class="ff-row ff-r3">
+<div class="ff-ratio">3,77%<small>CTR</small></div>
+<div class="ff-bar alt"><b>4.208</b> Cliques</div>
+<div class="ff-cost"><span>CPC R$ 1,37</span></div>
+</div>
+<div class="ff-row ff-r4">
+<div class="ff-ratio">7,15%<small>Conversão</small></div>
+<div class="ff-bar"><b>301</b> Leads</div>
+<div class="ff-cost"><span>CPL R$ 16,53</span></div>
+</div>
+</div>
+</div>
+<p class="subnote"><b>Leitura:</b> impressões e cliques são o total do Google (3 campanhas); os 301 leads vêm das campanhas de lead (02+03). Se preferir, dá pra restringir o funil só às campanhas de lead — a conversão clique→lead sobe para 16,18%.</p>
 </div>
 
 </div>
@@ -326,24 +360,24 @@ h3{font-size:36px}
 <div class="content-block">
 <div class="content-head">
 <h3>O que foi feito</h3>
-<p>Ações executadas nos últimos 30 dias.</p>
+<p>Ações executadas em julho.</p>
 </div>
 <div class="cards">
 <article class="card">
 <span class="tag">Meta Ads</span>
 <div class="slot"><ul>
-<li>Campanha de WhatsApp para bottons personalizados ativa (95 conversas).</li>
-<li>Campanha de tráfego para o perfil escalando alcance com CPV de R$ 0,14.</li>
-<li>Ativação sazonal LGBT+, Junho Vermelho e Copa do Mundo.</li>
+<li><strong>Campanha 01 · Vendas</strong> — R$ 222,52, gerando 4 compras rastreadas.</li>
+<li><strong>Campanha 02 · Reconhecimento</strong> — R$ 222,50, com 1.571 visitas ao perfil (CPV R$ 0,14).</li>
+<li><strong>Campanha 03 · Leads</strong> — R$ 317,14, gerando 74 conversas no WhatsApp.</li>
 </ul></div>
 </article>
 <article class="card">
 <span class="tag">Google Ads</span>
 <div class="slot"><ul>
-<li>Manutenção das campanhas de Search (site e dinâmica) e PMAX Shopping.</li>
-<li>Curadoria de termos de pesquisa e palavras-chave de maior intenção.</li>
-<li>R$ 7.050,93 investidos em Search, gerando 301 leads a R$ 23,40 por conversão.</li>
-<li>R$ 1.133,44 investidos separadamente em PMAX Shopping.</li>
+<li><strong>Campanha 01 · Vendas</strong> — R$ 784,20, com 59,80 vendas rastreadas (R$ 13,11/conv).</li>
+<li><strong>Campanha 02 · Lead (dinâmico)</strong> — R$ 3.333,28, criativos dinâmicos (CTR 14,79%).</li>
+<li><strong>Campanha 03 · Lead</strong> — R$ 1.642,06 (CTR 9,59%).</li>
+<li>As campanhas 02 e 03 geraram <strong>301 leads</strong> no período (apurados via CRM).</li>
 </ul></div>
 </article>
 </div>
@@ -388,7 +422,7 @@ h3{font-size:36px}
 <span class="tag">Expansão de canal</span>
 <div class="slot"><ul>
 <li>Estruturar estratégia de LinkedIn Ads para o público B2B (RH, compras e eventos).</li>
-<li>Corrigir o tracking de vendas para recuperar a leitura confiável de faturamento e ROAS.</li>
+<li>Corrigir o tracking de leads no Google — hoje apurados via CRM — para leitura automática e confiável do CPL.</li>
 </ul></div>
 </article>
 </div>
@@ -403,7 +437,7 @@ h3{font-size:36px}
 <div class="wrap">
 <div class="kicker">Próximos passos</div>
 <h2>A base está validada. Agora é escalar.</h2>
-<p>301 leads no Google e 95 conversas qualificadas no WhatsApp provam que a demanda existe e responde. O próximo ciclo é sobre transformar esse volume em mais receita: corrigir o rastreamento para provar o ROAS real, reforçar verba nas campanhas que já convertem e abrir novas frentes — sazonais de conscientização, novos criativos e LinkedIn B2B para chegar direto em quem decide grandes volumes.</p>
+<p>301 leads no Google e 74 conversas qualificadas no WhatsApp provam que a demanda existe e responde. O próximo ciclo é sobre transformar esse volume em mais receita: corrigir o rastreamento para provar o ROAS real, reforçar verba nas campanhas que já convertem e abrir novas frentes — sazonais de conscientização, novos criativos e LinkedIn B2B para chegar direto em quem decide grandes volumes.</p>
 <div class="flow">
 <span>Otimização</span><b>→</b>
 <span>Criativos sazonais</span><b>→</b>
